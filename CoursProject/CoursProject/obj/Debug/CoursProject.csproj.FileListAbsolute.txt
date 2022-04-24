@@ -1,0 +1,11 @@
+C:\Users\kamen\source\repos\CoursProject\CoursProject\bin\Debug\CoursProject.exe.config
+C:\Users\kamen\source\repos\CoursProject\CoursProject\bin\Debug\CoursProject.exe
+C:\Users\kamen\source\repos\CoursProject\CoursProject\bin\Debug\CoursProject.pdb
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.csproj.AssemblyReference.cache
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.Form1.resources
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.Properties.Resources.resources
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.csproj.GenerateResource.cache
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.csproj.CoreCompileInputs.cache
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.exe
+C:\Users\kamen\source\repos\CoursProject\CoursProject\obj\Debug\CoursProject.pdb

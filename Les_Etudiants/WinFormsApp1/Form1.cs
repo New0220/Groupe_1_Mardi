@@ -6,14 +6,9 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         //bouton ajouter 
-        private void button1_Click(object sender, EventArgs e)
+       private void button1_Click(object sender, EventArgs e)
         {
             //on verifie si l'etudiant ajouter existe deje si c'est le cas on ne l'ajoute plus 
             bool existance = false;
@@ -49,11 +44,7 @@ namespace WinFormsApp1
                         button1.Text = "Ajouter";
 
                         //ici on vide le contenue de chauqe champ d'entrer
-                        LeNumeroEtudiant.Clear();
-                        LeNom.Clear();
-                        LePrenom.Clear();
-                        LeCours.Clear();
-                        LaNotes.Clear();
+                        viderLeconteDechampText();
                     }
                 }
             }
@@ -70,19 +61,22 @@ namespace WinFormsApp1
                     liste_Etudiants.Items.Add(listDeDonne);
 
                     //ici on vide le contenue de chauqe champ d'entrer
-
-                    LeNumeroEtudiant.Clear();
-                    LeNom.Clear();
-                    LePrenom.Clear();
-                    LeCours.Clear();
-                    LaNotes.Clear();
+                    viderLeconteDechampText();
 
                     MessageBox.Show("Ajout Reussi");
                 }
         }
              }
 
-
+        //methode pour vider le contenue de champs texte
+        public void viderLeconteDechampText()
+        {
+            LeNumeroEtudiant.Clear();
+            LeNom.Clear();
+            LePrenom.Clear();
+            LeCours.Clear();
+            LaNotes.Clear();
+        }
 
         //Bouton enregister
         private void button5_Click(object sender, EventArgs e)
@@ -118,7 +112,6 @@ namespace WinFormsApp1
             }
 
             lireLaiste.Close();
-
         }
 
         //suppression 
@@ -178,9 +171,20 @@ namespace WinFormsApp1
             {
                 if(listes.SubItems[0].Text == champ_recherche.Text)
                 {
-                    MessageBox.Show("Etudiant trouvé");
+                    MessageBox.Show("Etudiant trouvÃ©");
                 }
             }
+        }
+        
+         //informe l'utilisateur comment utilise l'interface 
+         private void Menue_Aides_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("l'utilisation de cette interface etudiant est simple : \n" + 
+                " *_Pour Ajouter un etudiant il faut renplire le differents champs de texte sauf celui de chercher en suit cliquez sur Ajouter \n" + 
+                " *_Pour Suprimer un etudiant selectionner celui-ci avec la sourie puis faire un clique droit en suite cliquer sur Suprimer \n" + 
+                " *_Pour Modifier un etudiant cliquer sur l'etudiant en questionet puis faire un clique droit ensuite cliquer sur Modifier \n" + 
+                "en suite effectuer les modifiation dans les differents champs et en fin cliquer sur le bouton Modifiern \n" + 
+                " *_Pour Enregistrer cliquer sur le bouton enregistrer apres avoir effectuer toute vos action", "Information", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
     }
